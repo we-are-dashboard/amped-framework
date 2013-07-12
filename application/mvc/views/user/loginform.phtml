@@ -1,0 +1,24 @@
+<form id="loginform" name="login" action="/user/login" method="post" >
+	<div class='form_block'>
+		<label for='email'>Username or email</label>
+		<input type='text' name='email' />
+	</div>
+	<div class='form_block'>
+		<label for='password'>Password <a href='/user/lostpass' style='color:green; font-size:10px;'>Forgot Password?</a></label>
+		<input type='password' name='password' />
+	</div>
+	<button type="submit" class='action_btn pull_right'>
+		<span>SIGN IN</span>
+	</button>
+	<ul id="sign_in_with">
+		<li>
+			<a id="facebook_login_button" class="social_signin" data-socialnetwork='facebook' 
+				href="#" style='color:green;'>Sign in with facebook</a>
+		</li>
+		<li>
+			<a id="twitter_login_button" class="social_signin" data-socialnetwork='twitter' 
+				href="#" style='color:green;'>Sign in with twitter</a>
+		</li>
+	</ul>
+	<div class='clear'></div>
+</form>

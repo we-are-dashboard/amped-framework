@@ -1,0 +1,20 @@
+
+	<div>Connecting with <?=$this->socialNetwork?></div>
+    <img alt="Spinner..." src="/core/images/spinner.gif">
+    
+    <?if($this->user):?>
+	    
+    	<script>
+    		//console.log(window.opener);
+			window.focus();
+    		window.opener.FusUser.updateUserBar();
+    		window.close();
+    	</script>
+    <?else:?>
+    	<p style="font-size: 14px;">
+	    	<a href="<?=$this->loginUrl?>">Click here if you are not redirected.</a>
+	    </p>
+		<script>
+    		window.location = "<?=$this->loginUrl?>";
+		</script>
+    <?endif?>

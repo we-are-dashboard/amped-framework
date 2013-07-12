@@ -1,0 +1,19 @@
+<div id='content'>
+	<div class='container'>
+		<div class='inner_container content_container'>
+			<div class="page_content">
+				<div id="user_single_container">
+					 <div id="users_reel" class="pull_left ">
+					 	<h2>
+					 		<img class="pull_left" src="<?= $this->userInfo['profile_image'] ?>" width="50px" height="50px" />
+					 		<span class='pull_left'><?= $this->userInfo['username'] ?>'s recent shots</span>
+					 		<div class='clear'></div>
+					 	</h2>
+					 	<?= $this->action("reel", 'image', array('data'=>$this->userStream)) ?>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
